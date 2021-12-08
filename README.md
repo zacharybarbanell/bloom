@@ -1,1 +1,3 @@
 # bloom
+
+A pythonic bloom filter that automatically calculates the optimal number of hash functions to use.  Tested on two hash functions, a linear one which performs extremely poorly, and one that uses the builtin python pseudorandom generator, which performs basically optimally, but is somewhat slow.  Includes a function to test the error rate against the predicted error rate, which is accurate in cases where the better hash function is used.
